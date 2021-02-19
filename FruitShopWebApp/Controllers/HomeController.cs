@@ -28,6 +28,26 @@ namespace FruitShopWebApp.Controllers
             return View();
         }
 
+        public IActionResult FreshProduce()
+        {
+            return View();
+        }
+
+        public IActionResult Specials()
+        {
+            return View();
+        }
+
+        public IActionResult Location()
+        {
+            return View();
+        }
+
+        public IActionResult Contact()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

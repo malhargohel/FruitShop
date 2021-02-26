@@ -97,135 +97,356 @@
         </div>
 
     </body>*@
+@*<style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #34495e;
+        }
+
+        .slidershow {
+            width: 700px;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .middle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        .navigation {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+        }
+
+        .bar {
+            width: 50px;
+            height: 10px;
+            border: 2px solid #fff;
+            margin: 6px;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+
+            .bar:hover {
+                background: #fff;
+            }
+
+        input[name="r"] {
+            position: absolute;
+            visibility: hidden;
+        }
+
+        .slides {
+            width: 500%;
+            height: 100%;
+            display: flex;
+        }
+
+        .slide {
+            width: 20%;
+            transition: 0.6s;
+        }
+
+            .slide img {
+                width: 100%;
+                height: 100%;
+            }
+
+        #r1:checked ~ .s1 {
+            margin-left: 0;
+        }
+
+        #r2:checked ~ .s1 {
+            margin-left: -20%;
+        }
+
+        #r3:checked ~ .s1 {
+            margin-left: -40%;
+        }
+
+        #r4:checked ~ .s1 {
+            margin-left: -60%;
+        }
+
+        #r5:checked ~ .s1 {
+            margin-left: -80%;
+        }
+
+    </style>
+
+
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="slidershow middle">
+
+            <div class="slides">
+                <input type="radio" name="r" id="r1" checked>
+                <input type="radio" name="r" id="r2">
+                <input type="radio" name="r" id="r3">
+                <input type="radio" name="r" id="r4">
+                <input type="radio" name="r" id="r5">
+                <div class="slide s1">
+                    <img src="~/Images/apples-OG.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="~/Images/banana-hack-kb-main-201027_6cc2812b123bcae160b877e026f25d32.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="~/Images/mango-at-the-market-506813675-587e60f53df78c17b6967f5e.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="4.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="5.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="navigation">
+                <label for="r1" class="bar"></label>
+                <label for="r2" class="bar"></label>
+                <label for="r3" class="bar"></label>
+                <label for="r4" class="bar"></label>
+                <label for="r5" class="bar"></label>
+            </div>
+        </div>
+
+
+    </body>*@
+
+@*<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: Verdana, sans-serif;
+            }
+
+            .mySlides {
+                display: none;
+            }
+
+            img {
+                vertical-align: middle;
+            }
+
+            /* Slideshow container */
+            .slideshow-container {
+                max-width: 1000px;
+                position: relative;
+                margin: auto;
+            }
+
+            /* Caption text */
+            .text {
+                color: #f2f2f2;
+                font-size: 15px;
+                padding: 8px 12px;
+                position: absolute;
+                bottom: 8px;
+                width: 100%;
+                text-align: center;
+            }
+
+            /* Number text (1/3 etc) */
+            .numbertext {
+                color: #f2f2f2;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+            }
+
+            /* The dots/bullets/indicators */
+            .dot {
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+            }
+
+            .active {
+                background-color: #717171;
+            }
+
+            /* Fading animation */
+            .fade {
+                -webkit-animation-name: fade;
+                -webkit-animation-duration: 1.5s;
+                animation-name: fade;
+                animation-duration: 1.5s;
+            }
+
+            keyframes fade {
+                from
+
+            {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+
+            }
+
+            fade {
+                from
+
+            {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+
+            }
+
+            /* On smaller screens, decrease text size */
+            only screen and (max-width: 300px) {
+                .text
+
+            {
+                font-size: 11px
+            }
+            }
+        </style>
+    </head>
+    <body>
+
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="~/Images/apples-OG.jpg" alt="Apple" style="width:100%">
+                <div class="text">Caption Text</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="~/Images/banana-hack-kb-main-201027_6cc2812b123bcae160b877e026f25d32.jpg" alt="" style="width:100%">
+                <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="~/Images/mango-at-the-market-506813675-587e60f53df78c17b6967f5e.jpg" alt="" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 3000);
+    }
+        </script>
+
+    </body>*@
+
 <style>
-    
+
     body {
         margin: 0;
         padding: 0;
-        background: #34495e;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
     }
 
-    .slidershow {
-        width: 700px;
+    .content {
         height: 400px;
+        width: 750px;
         overflow: hidden;
+        box-shadow: 1px 1px 15px rgba(0,0,0,0.4);
     }
 
-    .middle {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-    }
-
-    .navigation {
-        position: absolute;
-        bottom: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        display: flex;
-    }
-
-    .bar {
-        width: 50px;
-        height: 10px;
-        border: 2px solid #fff;
-        margin: 6px;
-        cursor: pointer;
-        transition: 0.4s;
-    }
-
-        .bar:hover {
-            background: #fff;
-        }
-
-    input[name="r"] {
-        position: absolute;
-        visibility: hidden;
-    }
-
-    .slides {
-        width: 500%;
-        height: 100%;
-        display: flex;
-    }
-
-    .slide {
-        width: 20%;
-        transition: 0.6s;
-    }
-
-        .slide img {
-            width: 100%;
+        .content .images {
             height: 100%;
+            width: 100%;
         }
 
-    #r1:checked ~ .s1 {
-        margin-left: 0;
-    }
-
-    #r2:checked ~ .s1 {
-        margin-left: -20%;
-    }
-
-    #r3:checked ~ .s1 {
-        margin-left: -40%;
-    }
-
-    #r4:checked ~ .s1 {
-        margin-left: -60%;
-    }
-
-    #r5:checked ~ .s1 {
-        margin-left: -80%;
+    .images img {
+        height: 100%;
+        width: 100%;
     }
 
 </style>
 
-
 <head>
     <meta charset="utf-8">
-    <title></title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="slidershow middle">
-
-        <div class="slides">
-            <input type="radio" name="r" id="r1" checked>
-            <input type="radio" name="r" id="r2">
-            <input type="radio" name="r" id="r3">
-            <input type="radio" name="r" id="r4">
-            <input type="radio" name="r" id="r5">
-            <div class="slide s1">
-                <img src="~/Images/zz" alt="">
-            </div>
-            <div class="slide">
-                <img src="2.jpg" alt="">
-            </div>
-            <div class="slide">
-                <img src="3.jpg" alt="">
-            </div>
-            <div class="slide">
-                <img src="4.jpg" alt="">
-            </div>
-            <div class="slide">
-                <img src="5.jpg" alt="">
-            </div>
-        </div>
-
-        <div class="navigation">
-            <label for="r1" class="bar"></label>
-            <label for="r2" class="bar"></label>
-            <label for="r3" class="bar"></label>
-            <label for="r4" class="bar"></label>
-            <label for="r5" class="bar"></label>
+    <div class="content">
+        <div class="images">
+            <img src="~/Images/apples-OG.jpg">
+            <img src="~/Images/banana-hack-kb-main-201027_6cc2812b123bcae160b877e026f25d32.jpg">
+            <img src="~/Images/mango-at-the-market-506813675-587e60f53df78c17b6967f5e.jpg">
+            <img src="~/Images/green-vs-gold-masthead.jpg">
+            <img src="~/Images/close-up-delicious-fruit-1068534.jpg">
         </div>
     </div>
+    <script>
+        var indexValue = 0;
+        function slideShow() {
+            setTimeout(slideShow, 3000);
+            var x;
+            const img = document.querySelectorAll("img");
+            for (x = 0; x < img.length; x++) {
+                img[x].style.display = "none";
+            }
+            indexValue++;
+            if (indexValue > img.length) { indexValue = 1 }
+            img[indexValue - 1].style.display = "block";
+        }
+        slideShow();
+    </script>
+
 </body>
-
-
-
-
 
 </html>

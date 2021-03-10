@@ -5,8 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\Images\apples-OG.jpg" />
-    <None Include="wwwroot\Images\user-sign-icon-person-symbol-human-avatar-vector-12693195.jpg" />
+    <None Include="wwwroot\images\apples-OG.jpg" />
+    <None Include="wwwroot\images\user-sign-icon-person-symbol-human-avatar-vector-12693195.jpg" />
   </ItemGroup>
 
 </Project>

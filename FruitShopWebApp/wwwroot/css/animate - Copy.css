@@ -1,6 +1,6 @@
 ﻿@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
-body {
+    html {
     height: 100%;
     background-image: linear-gradient(to right top, #8e44ad 0%, #62e397 100%);
 }
@@ -37,3 +37,5 @@ nav {
                     background: rgba(255, 255, 255, 0.1);
                     color: rgba(0, 35, 122, 0.7);
                 }
+
+
